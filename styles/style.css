@@ -106,6 +106,30 @@ a {
     padding: 15px;
 }
 
+.portfolio-landing__item.hero-block {
+    grid-area: hero-block;
+    display: flex;
+    padding: 15px;
+}
+
+.hero-block__items {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.hero-block__content {
+    min-width: 200px;
+}
+
+.hero-block__header {
+    margin: 0;
+}
+
+.hero-block__text {
+    color: #bdbdbd;
+}
+
 .portfolio-landing__item.skills {
     grid-area: skills;
     padding: 0 15px 15px;
