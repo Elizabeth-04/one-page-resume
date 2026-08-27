@@ -39,6 +39,13 @@ a {
     padding: 0 10px;
 }
 
+.portfolio-landing__item.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .header__name {
     font-size: 25px;
     font-weight: bold;
@@ -69,18 +76,28 @@ a {
     color: #1e90ff;
 }
 
-.portfolio-landing__item.header {
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
 .portfolio-landing__item.about-me {
     grid-area: about-me;
     display: flex;
     gap: 10px;
     align-items: flex-start;
+}
+
+.about-me__avatar-placeholder {
+    margin: 20px 10px;
+    min-width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.about-me__content {
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.about-me__text {
+    color: #bdbdbd;
 }
 
 .portfolio-landing__item.hero-block {
