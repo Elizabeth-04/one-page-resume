@@ -24,7 +24,7 @@ a {
 
     grid-template-areas:
         "header header"
-        "about-me hero-block"
+        "about-me education"
         "skills skills"
         "projects projects"
         "courses courses"
@@ -91,6 +91,7 @@ a {
     background-color: #000000;
 }
 
+
 .about-me__content {
     flex-direction: column;
     margin-right: 10px;
@@ -100,33 +101,23 @@ a {
     color: #bdbdbd;
 }
 
-.portfolio-landing__item.hero-block {
-    grid-area: hero-block;
+.portfolio-landing__item.education {
+    grid-area: education;
     display: flex;
-    padding: 15px;
+    align-items: flex-start;
 }
 
-.portfolio-landing__item.hero-block {
-    grid-area: hero-block;
+.education__items {
     display: flex;
-    padding: 15px;
-}
-
-.hero-block__items {
-    display: flex;
-    gap: 20px;
+    flex-direction: column;
     width: 100%;
-}
-
-.hero-block__content {
+    margin: 0 10px;
     min-width: 200px;
 }
 
-.hero-block__header {
-    margin: 0;
-}
 
-.hero-block__text {
+.education__text {
+    margin: 0;
     color: #bdbdbd;
 }
 
@@ -145,10 +136,8 @@ a {
     padding: 15px;
 }
 
+/*копия с header. возможно, следует переделать*/
 .portfolio-landing__item.footer {
     grid-area: footer;
     display: flex;
-    padding: 10px 20px;
-    justify-content: space-between;
-    gap: 10px;
 }
