@@ -126,6 +126,38 @@ a {
     padding: 0 15px 15px;
 }
 
+.skills_header {
+    margin: 15px 0;
+}
+
+.skills_filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter_item {
+    padding: 5px 15px;
+    font-size: 18px;
+    color: #000000;
+    background-color: #7f7f7f;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filter_item:hover {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.filter_item--active {
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 10px
+}
+
 .portfolio-landing__item.projects {
     grid-area: projects;
     padding: 15px;
@@ -136,8 +168,38 @@ a {
     padding: 15px;
 }
 
-/*копия с header. возможно, следует переделать*/
+/*копия с header*/
 .portfolio-landing__item.footer {
     grid-area: footer;
     display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts {
+    margin-left: auto;
+}
+
+.footer__contacts-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.footer__contacts-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer__contacts-link:hover {
+    text-decoration: none;
+    color: #1e90ff;
 }
