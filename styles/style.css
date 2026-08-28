@@ -156,6 +156,34 @@ a {
     color: #ffffff;
 }
 
+.skills-search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 25px;
+}
+
+.skills-search_input {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #7f7f7f;
+}
+
+.skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skills_item {
+    padding: 5px 15px;
+    border: 2px solid #7f7f7f;
+    border-radius: 20px;
+}
+
 .portfolio-landing__item.projects {
     grid-area: projects;
     padding: 15px;
