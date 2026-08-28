@@ -115,7 +115,6 @@ a {
     min-width: 200px;
 }
 
-
 .education__text {
     margin: 0;
     color: #bdbdbd;
@@ -152,15 +151,56 @@ a {
     color: #ffffff;
 }
 
-.filter_item--active {
-    background-color: #1e90ff;
-    border: none;
-    border-radius: 10px
-}
-
 .portfolio-landing__item.projects {
     grid-area: projects;
     padding: 15px;
+}
+
+.portfolio-landing__projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 15px;
+}
+
+.portfolio-landing__projects-title {
+    margin: 15px 0;
+}
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 2px solid #7f7f7f;
+    border-radius: 15px;
+}
+
+.projects__card:hover {
+    box-shadow: 0 0 30px #000000;
+    border: 2px solid #ffffff;
+}
+
+.projects__card-preview {
+    display: block;
+    width: auto;
+    max-width: 300px;
+    height: 168px;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: contain;
+    background-color: #121212;
+}
+
+.projects__card-name {
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.projects__card-content
+ {
+    margin-top: 0;
+    color: #bdbdbd;
+    flex-grow: 1;
 }
 
 .portfolio-landing__item.courses {
