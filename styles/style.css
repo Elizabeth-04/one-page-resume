@@ -156,17 +156,23 @@ a {
     padding: 15px;
 }
 
-.portfolio-landing__projects {
+
+.portfolio-landing__item.courses {
+    grid-area: courses;
+    padding: 15px;
+}
+
+.portfolio-landing__projects, .portfolio-landing__courses {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     gap: 15px;
 }
 
-.portfolio-landing__projects-title {
+.portfolio-landing__projects-title, .portfolio-landing__courses-title {
     margin: 15px 0;
 }
 
-.projects__card {
+.projects__card, .courses__card {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -174,12 +180,12 @@ a {
     border-radius: 15px;
 }
 
-.projects__card:hover {
+.projects__card:hover, .courses__card:hover {
     box-shadow: 0 0 30px #000000;
     border: 2px solid #ffffff;
 }
 
-.projects__card-preview {
+.projects__card-preview, .courses__card-preview {
     display: block;
     width: auto;
     max-width: 300px;
@@ -190,25 +196,18 @@ a {
     background-color: #121212;
 }
 
-.projects__card-name {
+.projects__card-name, .courses__card-name {
     margin-top: 20px;
     text-align: center;
     cursor: pointer;
 }
 
-.projects__card-content
- {
+.projects__card-content, .courses__card-content {
     margin-top: 0;
     color: #bdbdbd;
     flex-grow: 1;
 }
 
-.portfolio-landing__item.courses {
-    grid-area: courses;
-    padding: 15px;
-}
-
-/*копия с header*/
 .portfolio-landing__item.footer {
     grid-area: footer;
     display: flex;
