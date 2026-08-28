@@ -91,6 +91,11 @@ a {
     background-color: #000000;
 }
 
+.about-me__avatar-placeholder img {
+    min-width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
 
 .about-me__content {
     flex-direction: column;
