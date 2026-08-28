@@ -293,3 +293,85 @@ a {
     text-decoration: none;
     color: #1e90ff;
 }
+
+@media (max-width: 900px) {
+    .portfolio-landing {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "about-me"
+            "education"
+            "skills"
+            "projects"
+            "courses"
+            "footer";
+    }
+
+    .portfolio-landing__projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    .portfolio-landing__item.header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header__name {
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .header__nav-section {
+        gap: 10px;
+    }
+
+    .header__menu {
+        margin-left: 0;
+    }
+
+    .header__menu-list {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .education__items {
+        flex-direction: column;
+    }
+
+    .portfolio-landing__preview-placeholder {
+        width: 100%;
+    }
+
+    .portfolio-landing__projects {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-landing__item.footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .footer__contacts {
+        margin-left: 0;
+    }
+
+    .footer__contacts-list {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+}
