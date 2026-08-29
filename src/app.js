@@ -1,6 +1,6 @@
-const filterButtons = document.querySelectorAll(".filter_item");
-const skills = document.querySelectorAll(".skills_item");
-const searchInput = document.querySelector(".skills-search_input");
+const filterButtons = document.querySelectorAll(".filter__item");
+const skills = document.querySelectorAll(".skills__item");
+const searchInput = document.querySelector(".skills-search__input");
 const skillsMessage = document.querySelector(".skills-message");
 
 let selectedCategory = "all";
@@ -20,10 +20,10 @@ function updateSkills() {
         const searchMatch = name.includes(searchText);
 
         if (categoryMatch && searchMatch) {
-            skill.classList.remove("skills_item--hidden");
+            skill.classList.remove("skills__item--hidden");
             visibleSkills++;
         } else {
-            skill.classList.add("skills_item--hidden");
+            skill.classList.add("skills__item--hidden");
         }
     });
 
@@ -41,10 +41,10 @@ filterButtons.forEach(function (button) {
         selectedCategory = button.dataset.filter;
 
         filterButtons.forEach(function (button) {
-            button.classList.remove("filter_item--active");
+            button.classList.remove("filter__item--active");
         });
 
-        button.classList.add("filter_item--active");
+        button.classList.add("filter__item--active");
 
         updateSkills();
     });
