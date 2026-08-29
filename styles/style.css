@@ -130,18 +130,18 @@ a {
     padding: 0 15px 15px;
 }
 
-.skills_header {
+.skills__header {
     margin: 15px 0;
 }
 
-.skills_filter {
+.skills__filter {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 15px;
 }
 
-.filter_item {
+.filter__item {
     padding: 5px 15px;
     font-size: 18px;
     color: #000000;
@@ -151,7 +151,7 @@ a {
     cursor: pointer;
 }
 
-.filter_item:hover {
+.filter__item:hover {
     background-color: #121212;
     color: #ffffff;
 }
@@ -163,7 +163,7 @@ a {
     padding-bottom: 25px;
 }
 
-.skills-search_input {
+.skills-search__input {
     color: #ffffff;
     background-color: transparent;
     font-size: 18px;
@@ -171,17 +171,28 @@ a {
     border-bottom: 2px solid #7f7f7f;
 }
 
-.skills_list {
+.skills__list {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }
 
-.skills_item {
+.skills__item {
     padding: 5px 15px;
     border: 2px solid #7f7f7f;
     border-radius: 20px;
+}
+
+.skills__item--hidden {
+    display: none;
+}
+
+.skills-message {
+    display: none;
+    margin-top: 0;
+    text-align: center;
+    color: #7f7f7f;
 }
 
 .portfolio-landing__item.projects {
