@@ -15,7 +15,7 @@ https://elizabeth-04.github.io/one-page-resume/
 https://drive.google.com/file/d/1F82eFPQVffgouCMIOH4o4L1sdMgjkXr4/view?usp=sharing
 
 ## Выполненные требования
-Сайт модержит:
+Сайт содержит:
 - имя и фамилию;
 - фотографию;
 - краткую информацию о себе;
@@ -23,6 +23,7 @@ https://drive.google.com/file/d/1F82eFPQVffgouCMIOH4o4L1sdMgjkXr4/view?usp=shari
 - навыки;
 - учебные работы и другие достижения;
 - контактную информацию.
+
 Реализованы:
 - интерактивный раздел навыков с фильтрацией по категориям и поиском;
 - совместная работа поиска и фильтра;
